@@ -1,19 +1,20 @@
-const[nd, sc, c1] = process.argv;
+const arg = process.argv[2];
+var tab = arg.split('');
+let res = "";
+let j = 0;
 
-let res = ""
-const space = " "
-var tab = c1.split('')
 
-function alt(tab){
-  for (i = 0; i < c1.length; i++){
-      if (tab[i] % 2 ==0) {
-        res += tab[i].toLowerCase();
-      } else {
-        res += tab[i].toUpperCase();
-      }
+for (i = 0; i < arg.length; i++){
+  if (tab[i] != " ") {
+    j += 1;
+    if ( j % 2 == 0) {
+      res += tab[i].toLowerCase();}
+    else {
+      res += tab[i].toUpperCase();}
     }
+  else {
+    res += " ";
+  }
 }
 
-console.log(alt(res))
-
-//...test
+console.log(res)
