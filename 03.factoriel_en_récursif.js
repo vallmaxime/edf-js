@@ -1,4 +1,4 @@
-let [nd, sc, num] = process.argv;
+const [nd, sc, num] = process.argv;
 
 
 
@@ -12,5 +12,5 @@ var facto = function(x) {
     }
 }
 
-res = facto(num);
+res = parseInt(facto(num));
 console.log(res);
