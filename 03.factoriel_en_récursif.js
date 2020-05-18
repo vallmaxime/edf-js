@@ -1,7 +1,5 @@
 const [nd, sc, num] = process.argv;
 
-
-
 var facto = function(x) {
     if (x < 1) {
       console.log("Il faut donner un chiffre au moins de 1 pour avoir l'effet de ce script");
@@ -12,5 +10,5 @@ var facto = function(x) {
     }
 }
 
-res = parseInt(facto(num));
+res = facto(num);
 console.log(res);
