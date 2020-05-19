@@ -12,6 +12,4 @@ var facto = function(x) {
     }
 }
 
-
-
 console.log(facto(integer));
